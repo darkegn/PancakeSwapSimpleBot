@@ -8,5 +8,5 @@
 * (Token1) Sell Receive (Token0)
 * TokenABİ.paste the ABI Codes of the token1 you want to sell into the json file.
 * Fill in the fields in the Config Object.
-* Enter the Amount you want to sell
+* Bottom Line Enter the Amount you want to sell
 * Run the nodejs file.  node index.js
