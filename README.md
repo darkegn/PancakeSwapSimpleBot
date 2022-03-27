@@ -1,4 +1,4 @@
-# PancakeSwapSellBot
+# PancakeSwapSimpleBot
 # Requirements
 
 * Nodejs 16 Version 
