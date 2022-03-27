@@ -48,7 +48,7 @@ const provider = new ethers.providers.JsonRpcProvider("https://dataseed1.binance
     
      const amountOutMin = amounts[1].sub(amounts[1].div(12));
     
-        const tx = await router.swapExactTokensForETH(testSellAmount, amountOutMin, [CONFIG.token, CONFIG.wbnb], wallet.address, Date.now() + 1000 * 60 * 5, 
+        const tx = await router.swapExactTokensForETH(sellAmount, amountOutMin, [CONFIG.token, CONFIG.wbnb], wallet.address, Date.now() + 1000 * 60 * 5, 
         {
             gasLimit: CONFIG.gasLimit,
             gasPrice: CONFIG.gasPrice,
@@ -73,6 +73,7 @@ async function sleep(delay){
 /** The seller must be located in the account where you configure the token. **/
 
 /** Sell() **/ 
-const amount = 5 * 10 ** 18; // 5 sell Amount , 10**18 18Decimals;
+const amount = 5;
+const s = amount*10**18; // 5 sell Amount , 10**18 18Decimals;
 
-async() => await sell(amount))();
+async() => await sell(s))();
