@@ -77,4 +77,4 @@ async function sleep(delay){
 const amount = 5; // Token1 Amount
 const s = amount*10**18; // 5 Amount , 10**18 18Decimals;
 
-async() => await sell(s))();
+async() => await sell(s.toString())();
